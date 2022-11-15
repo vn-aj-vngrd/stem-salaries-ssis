@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="STEMDimensions"
   DTS:PackageType="5"
-  DTS:VersionBuild="219"
-  DTS:VersionGUID="{915BB297-36BE-40B7-9B78-F412C8E57215}">
+  DTS:VersionBuild="232"
+  DTS:VersionGUID="{27D5417A-CC78-456A-8738-AB97A257A1FC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,108 +154,6 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ExpDest]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{FE81621F-98C0-4FE8-81C3-BEF5653E05DF}"
-      DTS:ObjectName="ExpDest">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Projects\Code\stem-salaries\ext_dest.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CompanyKey"
-              DTS:DTSID="{4ECFB62E-E4BD-43A1-BD7D-4AAF36E81C81}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="JobKey"
-              DTS:DTSID="{148423F0-1718-4DCA-BD57-E944CB1664F0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DemoKey"
-              DTS:DTSID="{9171A3DC-80C7-42B0-B7A3-86FB4B4522CA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ExpKey"
-              DTS:DTSID="{313BD6FA-82F8-4468-9902-E065D2BD93CA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TimeKey"
-              DTS:DTSID="{8427F389-B5F6-4740-ADBF-FE77C4863E16}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="BaseSalary"
-              DTS:DTSID="{F1753821-5AAD-4E20-967F-D72C31EA433B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TotalYearlyCompensation"
-              DTS:DTSID="{BF9D264F-D157-4479-A4F0-123EEA65EA3F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Bonus"
-              DTS:DTSID="{BDA3B849-DC9F-4A5E-8EAD-18E5A50C20A2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LookupExpKey"
-              DTS:DTSID="{812E61AF-A55C-4123-9C59-1C85AA8AE2A3}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ExpFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{6C40CE0A-D8B3-454D-A0DD-3BB331D3DBE7}"
@@ -318,116 +216,6 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[JobDest]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{81813BE6-D739-4E10-BBD0-AC44601D1C1B}"
-      DTS:ObjectName="JobDest">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="RaggedRight"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Projects\Code\stem-salaries\job_dest.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CompanyKey"
-              DTS:DTSID="{9AB5C49E-C4E2-4C9B-9E17-0CE465108106}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="JobKey"
-              DTS:DTSID="{0AFB6EF4-7900-47AC-BE38-94065960A500}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DemoKey"
-              DTS:DTSID="{B4081548-0DF7-4536-A7B3-8A82265F5EF2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ExpKey"
-              DTS:DTSID="{C11DA62F-358D-4ED4-B18A-796179FC220F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="255"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TimeKey"
-              DTS:DTSID="{0691E722-D50D-4AB5-A1C7-4D384EDD7C7F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="45"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="BaseSalary"
-              DTS:DTSID="{BC781D63-5F4E-447D-A22D-055F8AE9D924}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="45"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TotalYearlyCompensation"
-              DTS:DTSID="{6AAB732C-A489-4EAA-B7D0-55ADFAC358C9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="45"
-              DTS:DataType="131"
-              DTS:DataPrecision="10"
-              DTS:DataScale="2"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Bonus"
-              DTS:DTSID="{42BBC99A-8E46-4BE1-8A9E-BC32CC3D7CF6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnDelimiter=""
-              DTS:ColumnWidth="11"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LookupJobKey"
-              DTS:DTSID="{C944A166-D2AF-4631-9744-D06DE6E44FB3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Row delimiter column"
-              DTS:DTSID="{4FCC3FC8-7F6B-4900-B656-63A68B241F79}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[JobFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{FE8A9FA3-0E8D-436C-98B5-C2AEC7B31B0C}"
@@ -449,7 +237,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="JobKey"
-              DTS:DTSID="{D3DE65F5-7185-4B7B-87F7-D89B59364620}"
+              DTS:DTSID="{77907544-0496-4D9C-A9C2-A88F97EC983C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -458,7 +246,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JobId"
-              DTS:DTSID="{55FF38F7-9A6F-4BCF-AFC1-79D732032B6D}"
+              DTS:DTSID="{813FEA25-E64B-4B99-94B6-EEF6EDECE49C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -467,7 +255,44 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JobTitle"
-              DTS:DTSID="{9A6EFE53-D08A-4078-AD2A-4A3469E7CA26}"
+              DTS:DTSID="{A59F60F2-CE27-4BA9-9850-317C9E4811F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobLevel"
+              DTS:DTSID="{FE8EDDA6-53D7-4AFD-92B2-13D850ED977B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Out]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5E276B33-3E97-46B9-8426-55573A88617A}"
+      DTS:ObjectName="Out">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Van AJ Vanguardia\Downloads\output.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyKey"
+              DTS:DTSID="{EFC8BA51-11E1-4B8F-B4FB-1A903D2F9411}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -475,16 +300,97 @@
               DTS:MaximumWidth="255"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="JobLevel"
-              DTS:DTSID="{AC026F7A-3F00-4C5E-A61B-532810455DA3}"
+              DTS:ObjectName="JobKey"
+              DTS:DTSID="{7C3A654C-961B-440E-A2A4-74B308B3CF05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DemoKey"
+              DTS:DTSID="{5D3C74A8-C283-4056-8BD6-3606317D77AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ExpKey"
+              DTS:DTSID="{52A012BB-922E-4E09-AFE1-77D81F8A36DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TimeKey"
+              DTS:DTSID="{BE472DC8-FBA4-476D-AE09-DEBF1BCB11A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BaseSalary"
+              DTS:DTSID="{26EE20BE-CAEB-4E75-A707-3911045DF15B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalYearlyCompensation"
+              DTS:DTSID="{C188D032-3726-42BA-8064-7D43E7ABF50F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bonus"
+              DTS:DTSID="{27E1338D-601D-46E3-9E74-917F90DF4164}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LookupCompanyKey"
+              DTS:DTSID="{60DB4213-977A-4506-AF4E-85E78BEF6D73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LookupTimeKey"
+              DTS:DTSID="{302F444E-E91F-4C95-96B3-0018F06B00CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LookupDemoKey"
+              DTS:DTSID="{F839EB65-95C0-4C65-8F8A-996E5935365C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:ObjectName="JobTag"
-              DTS:DTSID="{D4C734D7-3DFD-4EE2-9AAE-A6293C8BFB35}"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LookupExpKey"
+              DTS:DTSID="{31F27A70-25EC-4C2B-BEF4-B568E9F9CF4F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2777,6 +2683,199 @@
               </outputs>
             </component>
             <component
+              refId="Package\Load ExpDim\Exp SCD"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Exp SCD"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Education], [ExpId], [YearsAtCompany], [YearsOfExperience],[IsActive] FROM [dbo].[ExperienceDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere">[IsActive] = '1'</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load ExpDim\Exp SCD.Connections[LookupConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
+                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].Columns[Education]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Education"
+                      externalMetadataColumnId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[Education]"
+                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[Education]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].Columns[YearsAtCompany]"
+                      cachedDataType="i4"
+                      cachedName="YearsAtCompany"
+                      externalMetadataColumnId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsAtCompany]"
+                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[YearsAtCompany]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].Columns[YearsOfExperience]"
+                      cachedDataType="i4"
+                      cachedName="YearsOfExperience"
+                      externalMetadataColumnId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsOfExperience]"
+                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[YearsOfExperience]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].Columns[ExpId]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ExpId"
+                      externalMetadataColumnId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[ExpId]"
+                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[ExpId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[Education]"
+                      dataType="wstr"
+                      length="255"
+                      name="Education" />
+                    <externalMetadataColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[ExpId]"
+                      dataType="wstr"
+                      length="255"
+                      name="ExpId" />
+                    <externalMetadataColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsAtCompany]"
+                      dataType="i4"
+                      name="YearsAtCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsOfExperience]"
+                      dataType="i4"
+                      name="YearsOfExperience" />
+                    <externalMetadataColumn
+                      refId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[IsActive]"
+                      dataType="i4"
+                      name="IsActive" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load ExpDim\Exp SCD.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Load ExpDim\Insert Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -3189,199 +3288,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Load ExpDim\Slowly Changing Dimension"
-              componentClassID="Microsoft.SCD"
-              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
-              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
-              name="Slowly Changing Dimension"
-              version="3">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SELECT statement used to create a schema rowset."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Education], [ExpId], [YearsAtCompany], [YearsOfExperience],[IsActive] FROM [dbo].[ExperienceDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
-                  name="CurrentRowWhere">[IsActive] = '1'</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
-                  name="UpdateChangingAttributeHistory">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
-                  name="FailOnFixedAttributeChange">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the column name for the inferred member."
-                  name="InferredMemberIndicator"></property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether inferred member updates are detected."
-                  name="EnableInferredMember">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
-                  name="FailOnLookupFailure">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies that all rows in the input are new or the transformation detects the change type."
-                  name="IncomingRowChangeType"
-                  typeConverter="IncomingRowChangeType">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Connections[LookupConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Defines the connection to use for lookups in the dimension table"
-                  name="LookupConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
-                  name="Slowly Changing Dimension Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Education]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Education"
-                      externalMetadataColumnId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Education]"
-                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[Education]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          name="ColumnType"
-                          typeConverter="ColumnType">3</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[YearsAtCompany]"
-                      cachedDataType="i4"
-                      cachedName="YearsAtCompany"
-                      externalMetadataColumnId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsAtCompany]"
-                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[YearsAtCompany]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          name="ColumnType"
-                          typeConverter="ColumnType">2</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[YearsOfExperience]"
-                      cachedDataType="i4"
-                      cachedName="YearsOfExperience"
-                      externalMetadataColumnId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsOfExperience]"
-                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[YearsOfExperience]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          name="ColumnType"
-                          typeConverter="ColumnType">2</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[ExpId]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ExpId"
-                      externalMetadataColumnId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[ExpId]"
-                      lineageId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output].Columns[ExpId]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          name="ColumnType"
-                          typeConverter="ColumnType">1</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[Education]"
-                      dataType="wstr"
-                      length="255"
-                      name="Education" />
-                    <externalMetadataColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[ExpId]"
-                      dataType="wstr"
-                      length="255"
-                      name="ExpId" />
-                    <externalMetadataColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsAtCompany]"
-                      dataType="i4"
-                      name="YearsAtCompany" />
-                    <externalMetadataColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[YearsOfExperience]"
-                      dataType="i4"
-                      name="YearsOfExperience" />
-                    <externalMetadataColumn
-                      refId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[IsActive]"
-                      dataType="i4"
-                      name="IsActive" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Unchanged Output]"
-                  description="Unchanged rows"
-                  exclusionGroup="1"
-                  name="Unchanged Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[New Output]"
-                  description="New rows"
-                  exclusionGroup="1"
-                  name="New Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
-                  description="Rows with changes in columns tagged FixedAttribute"
-                  exclusionGroup="1"
-                  name="Fixed Attribute Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
-                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
-                  exclusionGroup="1"
-                  name="Changing Attribute Updates Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
-                  description="HistoricalAttribute (Type 2) changes result in these new rows"
-                  exclusionGroup="2"
-                  name="Historical Attribute Inserts Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
-                  description="Information to update unpopulated initial dimension row"
-                  exclusionGroup="1"
-                  name="Inferred Member Updates Output"
-                  synchronousInputId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Load ExpDim\Union All"
               componentClassID="Microsoft.UnionAll"
               contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -3589,7 +3495,7 @@
               refId="Package\Load ExpDim.Paths[Changing Attribute Updates Output]"
               endId="Package\Load ExpDim\OLE DB Command 1.Inputs[OLE DB Command Input]"
               name="Changing Attribute Updates Output"
-              startId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]" />
+              startId="Package\Load ExpDim\Exp SCD.Outputs[Changing Attribute Updates Output]" />
             <path
               refId="Package\Load ExpDim.Paths[Derived Column Output]"
               endId="Package\Load ExpDim\OLE DB Command.Inputs[OLE DB Command Input]"
@@ -3602,19 +3508,19 @@
               startId="Package\Load ExpDim\Derived Column 1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Load ExpDim.Paths[Flat File Source Output]"
-              endId="Package\Load ExpDim\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+              endId="Package\Load ExpDim\Exp SCD.Inputs[Slowly Changing Dimension Input]"
               name="Flat File Source Output"
               startId="Package\Load ExpDim\Exp Flat File Source.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Load ExpDim.Paths[Historical Attribute Inserts Output]"
               endId="Package\Load ExpDim\Derived Column.Inputs[Derived Column Input]"
               name="Historical Attribute Inserts Output"
-              startId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
+              startId="Package\Load ExpDim\Exp SCD.Outputs[Historical Attribute Inserts Output]" />
             <path
               refId="Package\Load ExpDim.Paths[New Output]"
               endId="Package\Load ExpDim\Union All.Inputs[Union All Input 1]"
               name="New Output"
-              startId="Package\Load ExpDim\Slowly Changing Dimension.Outputs[New Output]" />
+              startId="Package\Load ExpDim\Exp SCD.Outputs[New Output]" />
             <path
               refId="Package\Load ExpDim.Paths[OLE DB Command Output]"
               endId="Package\Load ExpDim\Union All.Inputs[Union All Input 2]"
@@ -3884,13 +3790,6 @@
                       externalMetadataColumnId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobTitle]"
                       lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTitle]" />
                     <inputColumn
-                      refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].Columns[JobTag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobTag"
-                      externalMetadataColumnId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobTag]"
-                      lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]" />
-                    <inputColumn
                       refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].Columns[JobLevel]"
                       cachedDataType="wstr"
                       cachedLength="255"
@@ -3920,11 +3819,6 @@
                       dataType="wstr"
                       length="255"
                       name="JobTitle" />
-                    <externalMetadataColumn
-                      refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobTag]"
-                      dataType="wstr"
-                      length="255"
-                      name="JobTag" />
                     <externalMetadataColumn
                       refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobLevel]"
                       dataType="wstr"
@@ -4076,27 +3970,6 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobTag]"
-                      length="255"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]"
-                      name="JobTag"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4119,11 +3992,6 @@
                       dataType="wstr"
                       length="255"
                       name="JobLevel" />
-                    <externalMetadataColumn
-                      refId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobTag]"
-                      dataType="wstr"
-                      length="255"
-                      name="JobTag" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4167,7 +4035,7 @@
                   dataType="System.String"
                   description="Specifies the SELECT statement used to create a schema rowset."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [JobId], [JobLevel], [JobTag], [JobTitle],[IsActive] FROM [dbo].[JobDim]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [JobId], [JobLevel], [JobTitle],[IsActive] FROM [dbo].[JobDim]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
@@ -4240,20 +4108,6 @@
                         <property
                           dataType="System.Int32"
                           name="ColumnType"
-                          typeConverter="ColumnType">3</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].Columns[JobTag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobTag"
-                      externalMetadataColumnId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTag]"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          name="ColumnType"
                           typeConverter="ColumnType">2</property>
                       </properties>
                     </inputColumn>
@@ -4268,7 +4122,7 @@
                         <property
                           dataType="System.Int32"
                           name="ColumnType"
-                          typeConverter="ColumnType">2</property>
+                          typeConverter="ColumnType">3</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -4284,11 +4138,6 @@
                       dataType="wstr"
                       length="255"
                       name="JobLevel" />
-                    <externalMetadataColumn
-                      refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTag]"
-                      dataType="wstr"
-                      length="255"
-                      name="JobTag" />
                     <externalMetadataColumn
                       refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTitle]"
                       dataType="wstr"
@@ -4484,7 +4333,7 @@
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[JobDim] SET [JobTag] = ?,[JobTitle] = ? WHERE [JobId] = ? AND [IsActive] = '1'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[JobDim] SET [JobLevel] = ? WHERE [JobId] = ? AND [IsActive] = '1'</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4511,22 +4360,15 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="JobId"
-                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                       lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobId]" />
                     <inputColumn
-                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[JobTag]"
+                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[JobLevel]"
                       cachedDataType="wstr"
                       cachedLength="255"
-                      cachedName="JobTag"
+                      cachedName="JobLevel"
                       externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]" />
-                    <inputColumn
-                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[JobTitle]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobTitle"
-                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTitle]" />
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobLevel]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4547,18 +4389,6 @@
                       dataType="wstr"
                       length="255"
                       name="Param_1">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">65</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
-                      dataType="wstr"
-                      length="255"
-                      name="Param_2">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -4668,20 +4498,6 @@
                           name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]}</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\Load JobDim\Union All.Inputs[Union All Input 1].Columns[JobTag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobTag"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]}</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4745,20 +4561,6 @@
                           name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]}</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\Load JobDim\Union All.Inputs[Union All Input 2].Columns[JobTag]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobTag"
-                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]}</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4798,12 +4600,6 @@
                       length="255"
                       lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]"
                       name="JobLevel" />
-                    <outputColumn
-                      refId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]"
-                      name="JobTag" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -4851,1324 +4647,6 @@
               endId="Package\Load JobDim\Derived Column 1.Inputs[Derived Column Input]"
               name="Union All Output 1"
               startId="Package\Load JobDim\Union All.Outputs[Union All Output 1]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load SalaryFact"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{67FFBA18-0C8D-4A27-94EA-AC446FD09D0C}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Load SalaryFact"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Load SalaryFact\Company Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Company Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[CompanyDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[CompanyDim]) [refTable]
-where [refTable].[CompanyId] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CompanyKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CompanyId" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CompanyName" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Country" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CityId" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="City" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="State" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsActive" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load SalaryFact\546:invalid};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Company Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input].Columns[CompanyKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="CompanyKey"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[CompanyKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">CompanyId</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Match Output].Columns[LookupCompanyKey]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Match Output].Columns[LookupCompanyKey]"
-                      name="LookupCompanyKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">CompanyKey</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Demo Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Demo Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[DemographicDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[DemographicDim]) [refTable]
-where [refTable].[DemoId] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DemoKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DemoId" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Race" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Gender" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load SalaryFact\548:invalid};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Demo Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input].Columns[DemoKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="DemoKey"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[DemoKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">DemoId</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Match Output].Columns[LookupDemoKey]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Match Output].Columns[LookupDemoKey]"
-                      name="LookupDemoKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">DemoKey</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Exp Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Exp Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[ExperienceDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[ExperienceDim]) [refTable]
-where [refTable].[ExpId] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ExpKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ExpId" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="YearsAtCompany" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="YearsOfExperience" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Education" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsActive" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load SalaryFact\621:invalid};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Exp Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input].Columns[ExpKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="ExpKey"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[ExpKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">ExpId</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Match Output].Columns[LookupExpKey]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Match Output].Columns[LookupExpKey]"
-                      name="LookupExpKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">ExpKey</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Job Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Job Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[JobDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[JobDim]) [refTable]
-where [refTable].[JobId] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="JobKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobId" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobTitle" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobTag" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="JobLevel" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsActive" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Job Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input].Columns[JobKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="JobKey"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">JobId</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Match Output].Columns[LookupJobKey]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Match Output].Columns[LookupJobKey]"
-                      name="LookupJobKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">JobKey</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Salary Dim"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="Salary Dim"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[SalariesFact]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Salary Dim.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[BaseSalary]"
-                      cachedDataType="numeric"
-                      cachedName="BaseSalary"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[BaseSalary]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[BaseSalary]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[TotalYearlyCompensation]"
-                      cachedDataType="numeric"
-                      cachedName="TotalYearlyCompensation"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[TotalYearlyCompensation]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TotalYearlyCompensation]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[Bonus]"
-                      cachedDataType="numeric"
-                      cachedName="Bonus"
-                      cachedPrecision="10"
-                      cachedScale="2"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[Bonus]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[Bonus]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[LookupCompanyKey]"
-                      cachedDataType="i4"
-                      cachedName="LookupCompanyKey"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[CompanyKey]"
-                      lineageId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Match Output].Columns[LookupCompanyKey]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[LookupJobKey]"
-                      cachedDataType="i4"
-                      cachedName="LookupJobKey"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[JobKey]"
-                      lineageId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Match Output].Columns[LookupJobKey]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[LookupDemoKey]"
-                      cachedDataType="i4"
-                      cachedName="LookupDemoKey"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[DemoKey]"
-                      lineageId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Match Output].Columns[LookupDemoKey]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[LookupExpKey]"
-                      cachedDataType="i4"
-                      cachedName="LookupExpKey"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[ExpKey]"
-                      lineageId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Match Output].Columns[LookupExpKey]" />
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].Columns[LookupTimeKey]"
-                      cachedDataType="i4"
-                      cachedName="LookupTimeKey"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[TimeKey]"
-                      lineageId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Match Output].Columns[LookupTimeKey]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[CompanyKey]"
-                      dataType="i4"
-                      name="CompanyKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[JobKey]"
-                      dataType="i4"
-                      name="JobKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[DemoKey]"
-                      dataType="i4"
-                      name="DemoKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[ExpKey]"
-                      dataType="i4"
-                      name="ExpKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[TimeKey]"
-                      dataType="i4"
-                      name="TimeKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[BaseSalary]"
-                      dataType="numeric"
-                      name="BaseSalary"
-                      precision="10"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[TotalYearlyCompensation]"
-                      dataType="numeric"
-                      name="TotalYearlyCompensation"
-                      precision="10"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input].ExternalColumns[Bonus]"
-                      dataType="numeric"
-                      name="Bonus"
-                      precision="10"
-                      scale="2" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Salary Dim.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Salary Dim.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Dim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Salary Dim.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Salary Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1033"
-              name="Salary Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Salary Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[SalaryFile]"
-                  connectionManagerRefId="Package.ConnectionManagers[SalaryFile]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[CompanyKey]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompanyKey]"
-                      length="255"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[CompanyKey]"
-                      name="CompanyKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobKey]"
-                      length="255"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]"
-                      name="JobKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[DemoKey]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DemoKey]"
-                      length="255"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[DemoKey]"
-                      name="DemoKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[ExpKey]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ExpKey]"
-                      length="255"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[ExpKey]"
-                      name="ExpKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TimeKey]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TimeKey]"
-                      length="255"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TimeKey]"
-                      name="TimeKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[BaseSalary]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BaseSalary]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[BaseSalary]"
-                      name="BaseSalary"
-                      precision="10"
-                      scale="2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TotalYearlyCompensation]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TotalYearlyCompensation]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TotalYearlyCompensation]"
-                      name="TotalYearlyCompensation"
-                      precision="10"
-                      scale="2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[Bonus]"
-                      dataType="numeric"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bonus]"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[Bonus]"
-                      name="Bonus"
-                      precision="10"
-                      scale="2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CompanyKey]"
-                      dataType="wstr"
-                      length="255"
-                      name="CompanyKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobKey]"
-                      dataType="wstr"
-                      length="255"
-                      name="JobKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DemoKey]"
-                      dataType="wstr"
-                      length="255"
-                      name="DemoKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ExpKey]"
-                      dataType="wstr"
-                      length="255"
-                      name="ExpKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TimeKey]"
-                      dataType="wstr"
-                      length="255"
-                      name="TimeKey" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BaseSalary]"
-                      dataType="numeric"
-                      name="BaseSalary"
-                      precision="10"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TotalYearlyCompensation]"
-                      dataType="numeric"
-                      name="TotalYearlyCompensation"
-                      precision="10"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Bonus]"
-                      dataType="numeric"
-                      name="Bonus"
-                      precision="10"
-                      scale="2" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load SalaryFact\Time Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Time Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[TimeDim]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[TimeDim]) [refTable]
-where [refTable].[CalendarDateChar] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TimeKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CalendarDateChar" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CalendarDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MonthName" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayName" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayOfYear" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load SalaryFact\547:invalid};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load SalaryFact\Time Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  connectionManagerRefId="Package.ConnectionManagers[VAN-AJ-DESKTOP.STEMSalaries]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input].Columns[TimeKey]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="TimeKey"
-                      lineageId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output].Columns[TimeKey]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">CalendarDateChar</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Match Output].Columns[LookupTimeKey]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Match Output].Columns[LookupTimeKey]"
-                      name="LookupTimeKey"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">TimeKey</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Load SalaryFact.Paths[Flat File Source Output]"
-              endId="Package\Load SalaryFact\Company Lookup.Inputs[Lookup Input]"
-              name="Flat File Source Output"
-              startId="Package\Load SalaryFact\Salary Flat File Source.Outputs[Flat File Source Output]" />
-            <path
-              refId="Package\Load SalaryFact.Paths[Lookup Match Output]"
-              endId="Package\Load SalaryFact\Time Lookup.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Load SalaryFact\Company Lookup.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Load SalaryFact.Paths[Lookup Match Output1]"
-              endId="Package\Load SalaryFact\Demo Lookup.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Load SalaryFact\Time Lookup.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Load SalaryFact.Paths[Lookup Match Output2]"
-              endId="Package\Load SalaryFact\Exp Lookup.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Load SalaryFact\Demo Lookup.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Load SalaryFact.Paths[Lookup Match Output3]"
-              endId="Package\Load SalaryFact\Salary Dim.Inputs[OLE DB Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Load SalaryFact\Job Lookup.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Load SalaryFact.Paths[Lookup Match Output4]"
-              endId="Package\Load SalaryFact\Job Lookup.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Load SalaryFact\Exp Lookup.Outputs[Lookup Match Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6717,10 +5195,6 @@ where [refTable].[CalendarDateChar] = ?</property>
           Size="147,42"
           Id="Package\Load TimeDim"
           TopLeft="559,101" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Load SalaryFact"
-          TopLeft="551,286" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -7128,82 +5602,40 @@ where [refTable].[CalendarDateChar] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="209,42"
-          Id="Package\Load ExpDim\Slowly Changing Dimension"
-          TopLeft="128,107.5" />
+          Size="163,42"
+          Id="Package\Load ExpDim\Insert Destination"
+          TopLeft="151,620.5" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Load ExpDim\Exp Flat File Source"
-          TopLeft="147,5.5" />
-        <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Flat File Source Output]"
-          TopLeft="232.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Load ExpDim\Derived Column"
-          TopLeft="17.5000000000001,209.5" />
-        <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Historical Attribute Inserts Output]"
-          TopLeft="182.25,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-87.75,60"
-              Start="0,0"
-              End="-87.75,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.503937007874"
-                    Point2="0,20.503937007874"
-                    Point3="-4,20.503937007874" />
-                  <mssgle:LineSegment
-                    End="-83.75,20.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-83.75,20.503937007874"
-                    Point2="-87.75,20.503937007874"
-                    Point3="-87.75,24.503937007874" />
-                  <mssgle:LineSegment
-                    End="-87.75,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-118.93138671875,25.503937007874,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="163,42"
+          Id="Package\Load ExpDim\Derived Column 1"
+          TopLeft="151,518.5" />
         <NodeLayout
           Size="166,42"
           Id="Package\Load ExpDim\OLE DB Command"
-          TopLeft="5.50000000000006,311.5" />
+          TopLeft="5.50000000000006,314.5" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Load ExpDim\OLE DB Command 1"
+          TopLeft="294,212.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Load ExpDim\Union All"
+          TopLeft="172,416.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load ExpDim\Exp Flat File Source"
+          TopLeft="107,0.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load ExpDim\Derived Column"
+          TopLeft="17.5000000000001,212.5" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\Load ExpDim\Exp SCD"
+          TopLeft="128,110.5" />
         <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Derived Column Output]"
-          TopLeft="91.5000000000001,251.5">
+          Id="Package\Load ExpDim.Paths[Union All Output 1]"
+          TopLeft="232.5,458.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7221,51 +5653,11 @@ where [refTable].[CalendarDateChar] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Load ExpDim\Union All"
-          TopLeft="172,413.5" />
-        <EdgeLayout
-          Id="Package\Load ExpDim.Paths[New Output]"
-          TopLeft="232.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.8333333333334,264"
-              Start="0,0"
-              End="18.8333333333334,256.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,152.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,152.332789559543"
-                    Point2="0,156.332789559543"
-                    Point3="4,156.332789559543" />
-                  <mssgle:LineSegment
-                    End="14.8333333333334,156.332789559543" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.8333333333334,156.332789559543"
-                    Point2="18.8333333333334,156.332789559543"
-                    Point3="18.8333333333334,160.332789559543" />
-                  <mssgle:LineSegment
-                    End="18.8333333333334,256.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-17.6747200520833,161.332789559543,54.1827734375,11.43359375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load ExpDim.Paths[OLE DB Command Output]"
-          TopLeft="88.5000000000001,353.5">
+          TopLeft="88.5000000000001,356.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7297,95 +5689,177 @@ where [refTable].[CalendarDateChar] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Load ExpDim\Derived Column 1"
-          TopLeft="151,515.5" />
         <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Union All Output 1]"
-          TopLeft="232.5,455.5">
+          Id="Package\Load ExpDim.Paths[New Output]"
+          TopLeft="187.5,152.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="63.8333333333333,264"
               Start="0,0"
-              End="0,52.5">
+              End="63.8333333333333,256.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Load ExpDim\Insert Destination"
-          TopLeft="151,617.5" />
-        <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Derived Column Output1]"
-          TopLeft="232.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Load ExpDim\OLE DB Command 1"
-          TopLeft="294,209.5" />
-        <EdgeLayout
-          Id="Package\Load ExpDim.Paths[Changing Attribute Updates Output]"
-          TopLeft="282.75,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="98.75,60"
-              Start="0,0"
-              End="98.75,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.503937007874" />
+                    End="0,152.332789559543" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.503937007874"
-                    Point2="0,20.503937007874"
-                    Point3="4,20.503937007874" />
+                    Point1="0,152.332789559543"
+                    Point2="0,156.332789559543"
+                    Point3="4,156.332789559543" />
                   <mssgle:LineSegment
-                    End="94.75,20.503937007874" />
+                    End="59.8333333333333,156.332789559543" />
                   <mssgle:CubicBezierSegment
-                    Point1="94.75,20.503937007874"
-                    Point2="98.75,20.503937007874"
-                    Point3="98.75,24.503937007874" />
+                    Point1="59.8333333333333,156.332789559543"
+                    Point2="63.8333333333333,156.332789559543"
+                    Point3="63.8333333333333,160.332789559543" />
                   <mssgle:LineSegment
-                    End="98.75,52.5" />
+                    End="63.8333333333333,256.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-29.15890625,25.503937007874,157.0678125,11.6630859375"
+              BoundingBox="4.82527994791666,161.332789559543,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load ExpDim.Paths[Historical Attribute Inserts Output]"
+          TopLeft="159.75,152.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65.2499999999999,60"
+              Start="0,0"
+              End="-65.2499999999999,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.8767123287671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.8767123287671"
+                    Point2="0,20.8767123287671"
+                    Point3="-4,20.8767123287671" />
+                  <mssgle:LineSegment
+                    End="-61.2499999999999,20.8767123287671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.2499999999999,20.8767123287671"
+                    Point2="-65.2499999999999,20.8767123287671"
+                    Point3="-65.2499999999999,24.8767123287671" />
+                  <mssgle:LineSegment
+                    End="-65.2499999999999,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-107.68138671875,25.8767123287671,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load ExpDim.Paths[Flat File Source Output]"
+          TopLeft="190,42.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load ExpDim.Paths[Derived Column Output1]"
+          TopLeft="232.5,560.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load ExpDim.Paths[Derived Column Output]"
+          TopLeft="91.5000000000001,254.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load ExpDim.Paths[Changing Attribute Updates Output]"
+          TopLeft="215.25,152.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="166.25,60"
+              Start="0,0"
+              End="166.25,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.8767123287671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.8767123287671"
+                    Point2="0,20.8767123287671"
+                    Point3="4,20.8767123287671" />
+                  <mssgle:LineSegment
+                    End="162.25,20.8767123287671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="162.25,20.8767123287671"
+                    Point2="166.25,20.8767123287671"
+                    Point3="166.25,24.8767123287671" />
+                  <mssgle:LineSegment
+                    End="166.25,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.59109374999997,25.8767123287671,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7393,7 +5867,7 @@ where [refTable].[CalendarDateChar] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load ExpDim\Slowly Changing Dimension">
+    design-time-name="Package\Load ExpDim\Exp SCD">
     <Properties>
       <Property>
         <Name>SCDMetadata</Name>
@@ -7465,14 +5939,14 @@ where [refTable].[CalendarDateChar] = ?</property>
         <NodeLayout
           Size="170,42"
           Id="Package\Load JobDim\Job Flat File Source"
-          TopLeft="147,2.5" />
+          TopLeft="99,2.5" />
         <NodeLayout
           Size="118,42"
           Id="Package\Load JobDim\Job SCD"
-          TopLeft="175,107.5" />
+          TopLeft="128,107.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Flat File Source Output]"
-          TopLeft="233,44.5">
+          TopLeft="185.5,44.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7498,13 +5972,13 @@ where [refTable].[CalendarDateChar] = ?</property>
           TopLeft="17.5000000000001,209.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Historical Attribute Inserts Output]"
-          TopLeft="206.5,149.5">
+          TopLeft="159.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-112,60"
+              EndConnector="-65,60"
               Start="0,0"
-              End="-112,52.5">
+              End="-65,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -7515,20 +5989,20 @@ where [refTable].[CalendarDateChar] = ?</property>
                     Point2="0,20.8839779005525"
                     Point3="-4,20.8839779005525" />
                   <mssgle:LineSegment
-                    End="-108,20.8839779005525" />
+                    End="-61,20.8839779005525" />
                   <mssgle:CubicBezierSegment
-                    Point1="-108,20.8839779005525"
-                    Point2="-112,20.8839779005525"
-                    Point3="-112,24.8839779005525" />
+                    Point1="-61,20.8839779005525"
+                    Point2="-65,20.8839779005525"
+                    Point3="-65,24.8839779005525" />
                   <mssgle:LineSegment
-                    End="-112,52.5" />
+                    End="-65,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-131.05638671875,25.8839779005525,150.1127734375,11.609375"
+              BoundingBox="-107.55638671875,25.8839779005525,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7564,13 +6038,13 @@ where [refTable].[CalendarDateChar] = ?</property>
           TopLeft="172,413.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[New Output]"
-          TopLeft="234,149.5">
+          TopLeft="187,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.3333333333334,264"
+              EndConnector="64.3333333333334,264"
               Start="0,0"
-              End="17.3333333333334,256.5">
+              End="64.3333333333334,256.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -7581,20 +6055,20 @@ where [refTable].[CalendarDateChar] = ?</property>
                     Point2="0,156.332789559543"
                     Point3="4,156.332789559543" />
                   <mssgle:LineSegment
-                    End="13.3333333333334,156.332789559543" />
+                    End="60.3333333333334,156.332789559543" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.3333333333334,156.332789559543"
-                    Point2="17.3333333333334,156.332789559543"
-                    Point3="17.3333333333334,160.332789559543" />
+                    Point1="60.3333333333334,156.332789559543"
+                    Point2="64.3333333333334,156.332789559543"
+                    Point3="64.3333333333334,160.332789559543" />
                   <mssgle:LineSegment
-                    End="17.3333333333334,256.5" />
+                    End="64.3333333333334,256.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-18.4247200520833,161.332789559543,54.1827734375,11.43359375"
+              BoundingBox="5.07527994791668,161.332789559543,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7690,13 +6164,13 @@ where [refTable].[CalendarDateChar] = ?</property>
           TopLeft="294,209.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Changing Attribute Updates Output]"
-          TopLeft="261.5,149.5">
+          TopLeft="214.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="120,60"
+              EndConnector="167,60"
               Start="0,0"
-              End="120,52.5">
+              End="167,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -7707,20 +6181,20 @@ where [refTable].[CalendarDateChar] = ?</property>
                     Point2="0,20.8839779005525"
                     Point3="4,20.8839779005525" />
                   <mssgle:LineSegment
-                    End="116,20.8839779005525" />
+                    End="163,20.8839779005525" />
                   <mssgle:CubicBezierSegment
-                    Point1="116,20.8839779005525"
-                    Point2="120,20.8839779005525"
-                    Point3="120,24.8839779005525" />
+                    Point1="163,20.8839779005525"
+                    Point2="167,20.8839779005525"
+                    Point3="167,24.8839779005525" />
                   <mssgle:LineSegment
-                    End="120,52.5" />
+                    End="167,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-18.53390625,25.8839779005525,157.0678125,11.6630859375"
+              BoundingBox="4.96609374999997,25.8839779005525,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7805,19 +6279,13 @@ where [refTable].[CalendarDateChar] = ?</property>
       &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobLevel]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobLevel&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;JobTag&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobTitle]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobTitle&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
   &lt;/InputToColumnsCollection&gt;
   &lt;GeneratedComponentsIdentificationStrings&gt;
@@ -7840,220 +6308,6 @@ where [refTable].[CalendarDateChar] = ?</property>
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load SalaryFact">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Load SalaryFact\Salary Flat File Source"
-          TopLeft="524,11" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Load SalaryFact\Company Lookup"
-          TopLeft="537,87" />
-        <NodeLayout
-          Size="140,42"
-          Id="Package\Load SalaryFact\Time Lookup"
-          TopLeft="550,159" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Load SalaryFact\Demo Lookup"
-          TopLeft="546,243" />
-        <NodeLayout
-          Size="134,42"
-          Id="Package\Load SalaryFact\Exp Lookup"
-          TopLeft="548,313" />
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Lookup Match Output]"
-          TopLeft="618.5,129">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,5.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Lookup Match Output1]"
-          TopLeft="619,201">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,11.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Flat File Source Output]"
-          TopLeft="616.25,53">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Lookup Match Output2]"
-          TopLeft="616.5,285">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28"
-              Start="0,0"
-              End="0,20.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,4.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Load SalaryFact\Job Lookup"
-          TopLeft="545,393" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Load SalaryFact\Salary Dim"
-          TopLeft="554,469" />
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Lookup Match Output3]"
-          TopLeft="615.25,435">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34"
-              Start="0,0"
-              End="0,26.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load SalaryFact.Paths[Lookup Match Output4]"
-          TopLeft="613.25,355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,9.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load SalaryFact\Job Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[JobDim]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load SalaryFact\Salary Dim">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
