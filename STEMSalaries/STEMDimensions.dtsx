@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="STEMDimensions"
   DTS:PackageType="5"
-  DTS:VersionBuild="232"
-  DTS:VersionGUID="{27D5417A-CC78-456A-8738-AB97A257A1FC}">
+  DTS:VersionBuild="235"
+  DTS:VersionGUID="{CC3D0520-F809-45A6-A7B5-510235FA1341}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -237,7 +237,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="JobKey"
-              DTS:DTSID="{77907544-0496-4D9C-A9C2-A88F97EC983C}"
+              DTS:DTSID="{B5DB0D89-1BB1-4DD9-8ECC-D136FD356CD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -246,7 +246,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JobId"
-              DTS:DTSID="{813FEA25-E64B-4B99-94B6-EEF6EDECE49C}"
+              DTS:DTSID="{8F0DE8F3-CC49-491A-95B1-9A79E13FE45D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +255,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JobTitle"
-              DTS:DTSID="{A59F60F2-CE27-4BA9-9850-317C9E4811F0}"
+              DTS:DTSID="{85EE1013-6C4E-4B9D-840E-EA8B4A2194E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobLevel"
+              DTS:DTSID="{C211BDF4-4D08-4F92-9CEE-64ADC3E87B9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -263,8 +272,8 @@
               DTS:MaximumWidth="255"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="JobLevel"
-              DTS:DTSID="{FE8EDDA6-53D7-4AFD-92B2-13D850ED977B}"
+              DTS:ObjectName="JobTag"
+              DTS:DTSID="{7E755A17-301C-4227-B399-B6B3BD9F073E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -3797,6 +3806,13 @@
                       externalMetadataColumnId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobLevel]"
                       lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]" />
                     <inputColumn
+                      refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].Columns[JobTag]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JobTag"
+                      externalMetadataColumnId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobTag]"
+                      lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]" />
+                    <inputColumn
                       refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].Columns[IsActive]"
                       cachedDataType="i4"
                       cachedName="IsActive"
@@ -3824,6 +3840,11 @@
                       dataType="wstr"
                       length="255"
                       name="JobLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[JobTag]"
+                      dataType="wstr"
+                      length="255"
+                      name="JobTag" />
                     <externalMetadataColumn
                       refId="Package\Load JobDim\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsActive]"
                       dataType="i4"
@@ -3970,6 +3991,27 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobTag]"
+                      length="255"
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]"
+                      name="JobTag"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3992,6 +4034,11 @@
                       dataType="wstr"
                       length="255"
                       name="JobLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JobTag]"
+                      dataType="wstr"
+                      length="255"
+                      name="JobTag" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4035,7 +4082,7 @@
                   dataType="System.String"
                   description="Specifies the SELECT statement used to create a schema rowset."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [JobId], [JobLevel], [JobTitle],[IsActive] FROM [dbo].[JobDim]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [JobId], [JobLevel], [JobTag], [JobTitle],[IsActive] FROM [dbo].[JobDim]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
@@ -4112,6 +4159,20 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
+                      refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].Columns[JobTag]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JobTag"
+                      externalMetadataColumnId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTag]"
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
                       refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].Columns[JobTitle]"
                       cachedDataType="wstr"
                       cachedLength="255"
@@ -4138,6 +4199,11 @@
                       dataType="wstr"
                       length="255"
                       name="JobLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTag]"
+                      dataType="wstr"
+                      length="255"
+                      name="JobTag" />
                     <externalMetadataColumn
                       refId="Package\Load JobDim\Job SCD.Inputs[Slowly Changing Dimension Input].ExternalColumns[JobTitle]"
                       dataType="wstr"
@@ -4333,7 +4399,7 @@
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[JobDim] SET [JobLevel] = ? WHERE [JobId] = ? AND [IsActive] = '1'</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[JobDim] SET [JobLevel] = ?,[JobTag] = ? WHERE [JobId] = ? AND [IsActive] = '1'</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4360,7 +4426,7 @@
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="JobId"
-                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
                       lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobId]" />
                     <inputColumn
                       refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[JobLevel]"
@@ -4369,6 +4435,13 @@
                       cachedName="JobLevel"
                       externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                       lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobLevel]" />
+                    <inputColumn
+                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[JobTag]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JobTag"
+                      externalMetadataColumnId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4389,6 +4462,18 @@
                       dataType="wstr"
                       length="255"
                       name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Load JobDim\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="255"
+                      name="Param_2">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -4498,6 +4583,20 @@
                           name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Load JobDim\Union All.Inputs[Union All Input 1].Columns[JobTag]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JobTag"
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4561,6 +4660,20 @@
                           name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]}</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Load JobDim\Union All.Inputs[Union All Input 2].Columns[JobTag]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="JobTag"
+                      lineageId="Package\Load JobDim\Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]}</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4600,6 +4713,12 @@
                       length="255"
                       lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobLevel]"
                       name="JobLevel" />
+                    <outputColumn
+                      refId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Load JobDim\Union All.Outputs[Union All Output 1].Columns[JobTag]"
+                      name="JobTag" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -5939,25 +6058,25 @@
         <NodeLayout
           Size="170,42"
           Id="Package\Load JobDim\Job Flat File Source"
-          TopLeft="99,2.5" />
+          TopLeft="147.5,5.5" />
         <NodeLayout
           Size="118,42"
           Id="Package\Load JobDim\Job SCD"
-          TopLeft="128,107.5" />
+          TopLeft="173.5,107.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Flat File Source Output]"
-          TopLeft="185.5,44.5">
+          TopLeft="232.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,55.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5972,13 +6091,13 @@
           TopLeft="17.5000000000001,209.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Historical Attribute Inserts Output]"
-          TopLeft="159.5,149.5">
+          TopLeft="205,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-65,60"
+              EndConnector="-110.5,60"
               Start="0,0"
-              End="-65,52.5">
+              End="-110.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5989,20 +6108,20 @@
                     Point2="0,20.8839779005525"
                     Point3="-4,20.8839779005525" />
                   <mssgle:LineSegment
-                    End="-61,20.8839779005525" />
+                    End="-106.5,20.8839779005525" />
                   <mssgle:CubicBezierSegment
-                    Point1="-61,20.8839779005525"
-                    Point2="-65,20.8839779005525"
-                    Point3="-65,24.8839779005525" />
+                    Point1="-106.5,20.8839779005525"
+                    Point2="-110.5,20.8839779005525"
+                    Point3="-110.5,24.8839779005525" />
                   <mssgle:LineSegment
-                    End="-65,52.5" />
+                    End="-110.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-107.55638671875,25.8839779005525,150.1127734375,11.609375"
+              BoundingBox="-130.30638671875,25.8839779005525,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6038,13 +6157,13 @@
           TopLeft="172,413.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[New Output]"
-          TopLeft="187,149.5">
+          TopLeft="232.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="64.3333333333334,264"
+              EndConnector="18.8333333333334,264"
               Start="0,0"
-              End="64.3333333333334,256.5">
+              End="18.8333333333334,256.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -6055,20 +6174,20 @@
                     Point2="0,156.332789559543"
                     Point3="4,156.332789559543" />
                   <mssgle:LineSegment
-                    End="60.3333333333334,156.332789559543" />
+                    End="14.8333333333334,156.332789559543" />
                   <mssgle:CubicBezierSegment
-                    Point1="60.3333333333334,156.332789559543"
-                    Point2="64.3333333333334,156.332789559543"
-                    Point3="64.3333333333334,160.332789559543" />
+                    Point1="14.8333333333334,156.332789559543"
+                    Point2="18.8333333333334,156.332789559543"
+                    Point3="18.8333333333334,160.332789559543" />
                   <mssgle:LineSegment
-                    End="64.3333333333334,256.5" />
+                    End="18.8333333333334,256.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="5.07527994791668,161.332789559543,54.1827734375,11.43359375"
+              BoundingBox="-17.6747200520833,161.332789559543,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6164,13 +6283,13 @@
           TopLeft="294,209.5" />
         <EdgeLayout
           Id="Package\Load JobDim.Paths[Changing Attribute Updates Output]"
-          TopLeft="214.5,149.5">
+          TopLeft="260,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="167,60"
+              EndConnector="121.5,60"
               Start="0,0"
-              End="167,52.5">
+              End="121.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -6181,20 +6300,20 @@
                     Point2="0,20.8839779005525"
                     Point3="4,20.8839779005525" />
                   <mssgle:LineSegment
-                    End="163,20.8839779005525" />
+                    End="117.5,20.8839779005525" />
                   <mssgle:CubicBezierSegment
-                    Point1="163,20.8839779005525"
-                    Point2="167,20.8839779005525"
-                    Point3="167,24.8839779005525" />
+                    Point1="117.5,20.8839779005525"
+                    Point2="121.5,20.8839779005525"
+                    Point3="121.5,24.8839779005525" />
                   <mssgle:LineSegment
-                    End="167,52.5" />
+                    End="121.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.96609374999997,25.8839779005525,157.0678125,11.6630859375"
+              BoundingBox="-17.78390625,25.8839779005525,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6264,25 +6383,31 @@
   &lt;TableName&gt;[dbo].[JobDim]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobId]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Job Flat File Source.Outputs[Flat File Source Output].Columns[JobId]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobId&lt;/ColumnName&gt;
       &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Job Flat File Source.Outputs[Flat File Source Output].Columns[JobKey]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobKey&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobLevel]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Job Flat File Source.Outputs[Flat File Source Output].Columns[JobLevel]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobLevel&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Flat File Source.Outputs[Flat File Source Output].Columns[JobTitle]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTag]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;JobTag&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Job Flat File Source.Outputs[Flat File Source Output].Columns[JobTitle]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;JobTitle&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
